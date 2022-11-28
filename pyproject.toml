@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "cloud-detection"
+version = "0.1.0"
+description = "Stanford CS229 Final Project: cloud detection"
+authors = ["Stas Sarosek <sarosek@stanford.edu>"]
+readme = "README.md"
+packages = [{include = "cloud_detection"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+tensorflow = "^2.11.0"
+scikit-image = "^0.19.3"
+scikit-learn = "^1.1.3"
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.6.2"
+seaborn = "^0.12.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.17.1"
+jupyterlab = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
